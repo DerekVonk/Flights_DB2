@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- If you want to check the xml against the DTD use: -->
+<!DOCTYPE itinerary SYSTEM "FlightsBasics.dtd">
+
+<itinerary>
+ <ticket>
+ <airline>American</airline>
+ <flight>4090</flight>
+ <departing date="10-Apr-01" time="6:45AM" airport="IND" gate="A20" />
+ <arriving date="10-Apr-01" time="7:52AM" airport="ORD" gate="B64" />
+ <miles>168</miles>
+ <seating class="Coach" seat="D3"/>
+ <duration>1hr 7mn</duration>
+ </ticket>
+</itinerary>
