@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT itinerary (ticket*)>
+
+<!ELEMENT ticket (airline, flight, departing, arriving, miles, seating,
+duration)>
+
+<!ELEMENT airline (#PCDATA)>
+
+<!ELEMENT flight (#PCDATA)>
+
+<!ELEMENT departing (#PCDATA)>
+<!ATTLIST departing
+
+  date  CDATA #REQUIRED
+  time  CDATA #REQUIRED
+  airport CDATA #REQUIRED
+  gate  CDATA #IMPLIED>
+
+<!ELEMENT arriving (#PCDATA)>
+<!ATTLIST arriving
+  date  CDATA #REQUIRED
+  time  CDATA #REQUIRED
+  airport CDATA #REQUIRED
+  gate  CDATA #IMPLIED>
+
+<!ELEMENT miles (#PCDATA)>
+
+<!ELEMENT seating (#PCDATA)>
+<!ATTLIST seating
+  class  CDATA #REQUIRED
+  seat  CDATA #IMPLIED>
+
+<!ELEMENT duration (#PCDATA)>
